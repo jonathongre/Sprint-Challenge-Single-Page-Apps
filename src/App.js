@@ -5,8 +5,9 @@ import AppRouter from './components/AppRouter.js';
 
 export default function App() {
   return <main>
+    
     <Header />
-    <TabNav />
+    <TabNav />   
     <AppRouter />
   </main>
 }
