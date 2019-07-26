@@ -8,13 +8,13 @@ export default function LocationCard (props) {
   }
   
   return (
-    <Card style={{ color: '#fff', backgroundColor: '#000', borderRadius: '20px', width: '80%', margin: '2rem', boxShadow: '1px 1px 15px #044b0c' }}>
+    <Card style={{ color: '#fff', backgroundColor: '#000', borderRadius: '20px', width: '100%', margin: '2rem', boxShadow: '1px 1px 15px #044b0c' }}>
       <CardBody>
-        <CardTitle>Name : {props.data.name}</CardTitle>
-        <CardSubtitle>
-          Type : {props.data.type} Dimension : {props.data.dimension}
+        <CardTitle style={{ padding: '1rem' }}>Name : {props.data.name}</CardTitle>
+        <CardSubtitle style={{ padding: '1rem' }}>
+          Type : {props.data.type}
         </CardSubtitle>
-        <CardSubtitle>
+        <CardSubtitle style={{ padding: '1rem' }}>
           Dimension : {props.data.dimension}
         </CardSubtitle>
       </CardBody>
