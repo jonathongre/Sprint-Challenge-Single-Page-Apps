@@ -17,11 +17,9 @@ export default function CharacterList() {
 
   return <section className='character-list grid-view'>
 
-      <h2>
         {characters.map(character => (
           <CharacterCard data={character} />
         ))}
-      </h2>
     </section>
 
 }

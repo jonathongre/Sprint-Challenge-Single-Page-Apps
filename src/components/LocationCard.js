@@ -8,7 +8,7 @@ export default function LocationCard (props) {
   }
   
   return (
-    <Card>
+    <Card style={{ color: '#fff', backgroundColor: '#000', borderRadius: '20px', width: '80%', margin: '2rem', boxShadow: '1px 1px 15px #044b0c' }}>
       <CardBody>
         <CardTitle>Name : {props.data.name}</CardTitle>
         <CardSubtitle>
