@@ -13,9 +13,10 @@ export default function CharacterCard (props) {
           alt={props.data.name}
         />
         <CardBody>
-          <CardTitle>Name : {props.data.name}</CardTitle>
-          <CardSubtitle>Gender : {props.data.gender} Species : {props.data.species}</CardSubtitle>
-          <CardText>{props.data.status}</CardText>
+          <CardTitle>Name: {props.data.name}</CardTitle>
+          <CardSubtitle>Gender: {props.data.gender}</CardSubtitle>
+          <CardSubtitle>Species: {props.data.species}</CardSubtitle>
+          <CardText>Status: {props.data.status}</CardText>
         </CardBody>
       </Card>
     </div>
