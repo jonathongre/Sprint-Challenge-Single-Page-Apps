@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Form, Input, Button } from 'reactstrap';
 
 export default function SearchForm({ onSearch }) {
   const [query, setQuery] = useState({
@@ -7,18 +8,24 @@ export default function SearchForm({ onSearch }) {
   const handleInputChange = (event) => {
     setQuery({ ...query, name: event.target.value })
   }
+  
+  const search = (event) => {
+     onSearch(query.name);
+    event.preventDefault();
+
+  }
 
   return (
     <section className="search-form">
-      <form onSubmit={() => onSearch(query)}>
-        <input
+      <Form inline onSubmit={(event) => search(event)}>
+        <Input
           onChange={handleInputChange}
           placeholder="name"
           value={query.name}
           name="name"
         />
-        <button type="submit">Search</button>
-      </form>
+        <Button color="success" type="submit">Search</Button>
+      </Form>
     </section>
   );
 }
