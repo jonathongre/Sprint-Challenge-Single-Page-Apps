@@ -26,6 +26,6 @@ const panes = [
   { menuItem: <Menu.Item key='episodes' as={Nav} to={`/episodes`} content={episodesLabel} /> },
 ]
 
-const TabNav = () => <Tab panes={panes} renderActiveOnly={false} />
+const TabNav = () => <Tab menu={{ color: 'black', inverted: true, attached: false, tabular: false }} panes={panes} renderActiveOnly={false} />
 
 export default TabNav

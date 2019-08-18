@@ -13,10 +13,10 @@ export default function CharacterCard (props) {
           alt={props.data.name}
         />
         <CardBody>
-          <CardTitle style={{ padding: '1rem' }}>Name: {props.data.name}</CardTitle>
-          <CardSubtitle style={{ padding: '1rem' }}>Gender: {props.data.gender}</CardSubtitle>
-          <CardSubtitle style={{ padding: '1rem' }}>Species: {props.data.species}</CardSubtitle>
-          <CardText style={{ padding: '1rem' }}>Status: {props.data.status}</CardText>
+          <CardTitle><h4>Name: {props.data.name}</h4></CardTitle>
+          <CardSubtitle style={{ paddingTop: '1rem' }}>Gender: {props.data.gender}</CardSubtitle>
+          <CardSubtitle style={{ paddingTop: '1rem' }}>Species: {props.data.species}</CardSubtitle>
+          <CardText style={{ paddingTop: '1rem' }}>Status: {props.data.status}</CardText>
         </CardBody>
       </Card>  
   );
